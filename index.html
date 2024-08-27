@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha Virtual JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+
+    <div id="login-form">
+      <h2>Login</h2>
+      <form>
+        <label for="login-username">Usuário:</label>
+        <input type="text" id="login-username" required="">
+        <label for="login-password">Senha:</label>
+        <input type="password" id="login-password" required="">
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="mensagem-login"></p>
+    </div>
+
+    <div id="frete">
+      <h2>Calcular Frete</h2>
+      <form id="form-frete">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="Digite o CEP" maxlength="8" required="">
+        <button type="submit">Calcular Frete</button>
+      </form>
+      <div id="resultado-frete">
+        <p id="endereco"></p>
+        <p id="erro"></p>
+      </div>
+
+      <div id="produtos">
+        <h2>Catálogo de Produtos</h2>
+      </div>
+
+      <div id="carrinho-resumo">
+        <h2>Resumo do Carrinho</h2>
+      </div>
+
+      <div id="carrinho">
+        <img src="https://media.istockphoto.com/id/1055020934/pt/vetorial/black-shopping-cart-icon-on-transparent-background.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=TMq-VdLhyxAWiqe1aEWygoHPl1DcxbGWnLxICu6c4j4=" alt="Carrinho de Compras" id="carrinho-icon">
+        <span id="carrinho-quantidade">0</span>
+        <div id="carrinho-detalhes" class="hidden">
+          <h3>Itens no Carrinho</h3>
+          <div id="carrinho-lista">
+
+          </div>
+          <div id="carrinho-total">
+            <strong>Total:</strong> <span id="carrinho-total-valor">R$ 0,00</span>
+          </div>
+        </div>
+      </div>
+
+
+      <button id="finalizar-compra">Finalizar Compra</button>
+
+
+      <script src="script.js"></script>
+
+    </div>
+  </body>
+
+</html>
